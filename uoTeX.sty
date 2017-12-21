@@ -1,0 +1,69 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%% Standard packages %%%%%%%%%%%%%%%%%%%%%%
+	\usepackage{amsmath,amsthm,amssymb}
+	\usepackage{color}
+	\usepackage{enumerate}
+	\usepackage{geometry}
+	\usepackage{graphicx}
+	\usepackage{hyperref}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%% Sets %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\DeclareMathOperator{\N}{\mathbb{N}}
+	\DeclareMathOperator{\Z}{\mathbb{Z}}
+	\DeclareMathOperator{\Zplus}{\mathbb{Z}^{+}}
+	\DeclareMathOperator{\Zstar}{\mathbb{Z}^{\star}}
+	\DeclareMathOperator{\Q}{\mathbb{Q}}
+	\DeclareMathOperator{\Qplus}{\mathbb{Q}^{+}}
+	\DeclareMathOperator{\Qstar}{\mathbb{Q}^{\star}}
+	\DeclareMathOperator{\Qcomp}{\mathbb{Q}^{c}}
+	\DeclareMathOperator{\I}{\mathbb{I}}
+	\DeclareMathOperator{\R}{\mathbb{R}}
+	\DeclareMathOperator{\Rplus}{\mathbb{R}^{+}}
+	\DeclareMathOperator{\Rstar}{\mathbb{R}^{\star}}
+	\DeclareMathOperator{\C}{\mathbb{C}}
+	\DeclareMathOperator{\Cstar}{\mathbb{C}^{\star}}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%% Operations %%%%%%%%%%%%%%%%%%%%%%%%%%
+	%% Fat dot operation
+	\makeatletter
+		\newcommand*\fatdot{\mathpalette\fatdot@{.5}}
+		\newcommand*\fatdot@[2]{\mathbin{\vcenter{\hbox{\scalebox{#2}{$\m@th#1\bullet$}}}}}
+	\makeatother
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%% Pretty Letters %%%%%%%%%%%%%%%%%%%%%%%%
+	\DeclareMathOperator{\ep}{\varepsilon}
+	\DeclareMathOperator{\ph}{\varphi}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%% Probability & Statistics %%%%%%%%%%%%%%%%%%%
+	\DeclareMathOperator{\prob}{\mathbb{P}}
+	\DeclareMathOperator{\E}{\mathbb{E}}
+	\DeclareMathOperator{\var}{\rm Var}
+	\DeclareMathOperator{\cov}{\rm Cov}
+	\DeclareMathOperator{\sd}{\rm SD}
+	\DeclareMathOperator{\se}{\rm SE}
+%% Sum of Squares Components
+	\newcommand{\ssreg}{{\rm SS}_{{\rm Reg}}}
+	\newcommand{\ssr}{{\rm SS}_{{\rm Res}}}
+	\newcommand{\sst}{{\rm SS}_{{\rm Tot}}}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%% Linear Algebra %%%%%%%%%%%%%%%%%%%%%%%%
+	%% Linear span
+	\DeclareMathOperator{\Ell}{\mathscr{L}}
+	%% Vectors and Matrices are bold
+	\newcommand{\bvec}[1]{{\boldsymbol #1}}
+	
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%% Number Theory %%%%%%%%%%%%%%%%%%%%%%%%
+	%% Modular Arithmetic
+	\renewcommand{\mod}[1]{\ (\mathrm{mod}\ #1)}
+
