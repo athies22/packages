@@ -10,21 +10,39 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%% Sets %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	%% naturals
 	\DeclareMathOperator{\N}{\mathbb{N}}
+	%% integers
 	\DeclareMathOperator{\Z}{\mathbb{Z}}
+	%% positive integers
 	\DeclareMathOperator{\Zplus}{\mathbb{Z}^{+}}
+	%% nonzero integers
 	\DeclareMathOperator{\Zstar}{\mathbb{Z}^{\star}}
+	%% rationals
 	\DeclareMathOperator{\Q}{\mathbb{Q}}
+	%% positive rationals
 	\DeclareMathOperator{\Qplus}{\mathbb{Q}^{+}}
+	%% nonzero rationals
 	\DeclareMathOperator{\Qstar}{\mathbb{Q}^{\star}}
+	%% irrationals
 	\DeclareMathOperator{\Qcomp}{\mathbb{Q}^{c}}
 	\DeclareMathOperator{\I}{\mathbb{I}}
+	%% reals
 	\DeclareMathOperator{\R}{\mathbb{R}}
+	%% positive reals
 	\DeclareMathOperator{\Rplus}{\mathbb{R}^{+}}
+	%% nonzero reals
 	\DeclareMathOperator{\Rstar}{\mathbb{R}^{\star}}
+	%% complex
 	\DeclareMathOperator{\C}{\mathbb{C}}
+	%% nonzero complex
 	\DeclareMathOperator{\Cstar}{\mathbb{C}^{\star}}
-
+	%% powerset of a set
+	\DeclareMathOperator{\pset}{\mathcal{P}}
+	%% set of continuous functions in a certain variable
+	\DeclareMathOperator{\cont}{\mathscr{C}}
+	%% set of functions in a certain variable
+	\DeclareMathOperator{\func}{\mathscr{F}}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%% Operations %%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -33,6 +51,9 @@
 		\newcommand*\fatdot{\mathpalette\fatdot@{.5}}
 		\newcommand*\fatdot@[2]{\mathbin{\vcenter{\hbox{\scalebox{#2}{$\m@th#1\bullet$}}}}}
 	\makeatother
+
+	%% bracket notation for cyclic subgroups, principal ideals, inner product, etc.
+	\newcommand{\dangle}[1]{\langle #1 \rangle}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%% Pretty Letters %%%%%%%%%%%%%%%%%%%%%%%%
